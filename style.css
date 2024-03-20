@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #040404;
+}
+h1{
+    color:aqua;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    height: 100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+.card{
+    background-color: #a7a0a0;
+    border:2px solid black;
+    height:300px;
+    width:300px;
+    border-radius:10px;
+    text-align: center;
+    position:relative;
+    overflow:hidden;
+}
+.card > img{
+    height:100px;
+    width:200px;
+    margin-left:110px;
+    margin-top:30px;
+    position:static;
+}
+.card .nike h1{
+    color:rgb(175, 241, 9);
+}
+.card .nike {
+    margin-top:60px;
+    font-size: 15px;
+    color:white;
+}
+.card .content{
+    position:absolute;
+}
+.card .content .size{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    gap:12px;
+    margin-left:26px;
+}
+.size > p{
+    margin-top:5px;
+    font-size: 20px;
+}
+.size_no{
+    border:2px solid black;
+    height:19px;
+    width:17px;
+    margin:3px;
+    padding:6px;
+    border-radius: 5px;
+}
+.circle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    gap:20px;
+}
+.circle p{
+    font-size: 20px;
+}
+.content{
+    margin-top:100px;
+}
+.content .circle .color{
+    border:2px solid black;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
+#red{
+    background-color: red;
+}
+#black{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+.card:hover img{
+    margin-left: 0px;
+    transition:1s  ease;
+}
+.card:hover .nike{
+    margin-top:0px;
+    transition:1s  ease;
+}
+.card:hover .content{
+    margin-top:5px;
+}
+.card:hover p{
+    color:bisque;
+    font-size: 25px ;
+    transition:1s ease;
+}
+.size #size_7:hover{
+    background-color: rgb(70, 222, 28);
+    transition:1s ease;
+}
+.size #size_8:hover{
+    background-color: rgb(28, 220, 237);
+    transition:1s ease;
+}
+.size #size_9:hover{
+    background-color: rgb(236, 225, 19);
+    transition:1s ease;
+}
+.size #size_10:hover{
+    background-color: rgb(234, 39, 211);
+    transition:1s ease;
+}
+.color-3:hover > :not(:hover){
+    filter:blur(2px);
+    filter:brightness(60%);
+    transition:.5s ease;
+}
+.color-3{
+    display:flex;
+    gap:15px;
+}
